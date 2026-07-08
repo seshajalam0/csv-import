@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --background: #ece9dd;
+  --surface: #fbfaf4;
+  --surface-muted: #f2f0e6;
+  --ink: #17211b;
+  --muted: #647168;
+  --line: #d8d6c8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(120deg, rgba(49, 90, 69, 0.11), transparent 32%),
+    linear-gradient(180deg, var(--background), #f8f6ed 68%);
+  color: var(--ink);
+  font-family: "IBM Plex Sans", "Aptos", "Segoe UI", sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+::selection {
+  background: #d7eadf;
+}

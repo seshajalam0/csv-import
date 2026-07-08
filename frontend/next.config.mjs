@@ -1,0 +1,15 @@
+import { dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const appDir = dirname(fileURLToPath(import.meta.url));
+const workspaceDir = dirname(appDir);
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  turbopack: {
+    root: workspaceDir
+  }
+};
+
+export default nextConfig;
